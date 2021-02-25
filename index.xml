@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CCExtractor&#39;s home page on Site Test Run</title>
+    <link>drs-11.github.io/</link>
+    <description>Recent content in CCExtractor&#39;s home page on Site Test Run</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="drs-11.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>drs-11.github.io/public/general/support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>drs-11.github.io/public/general/support/</guid>
+      <description>Slack #  Slack is a great communication tool. Most CCExtractor developers hang out in a slack team. You&amp;rsquo;re welcome to request an invitation here: {slackinvite}
+Technical issues #  By far the best way to get report issues is by opening a ticket at GitHub&amp;rsquo;s issue tracker.
+When creating a ticket:
+- Make sure you are using the last CCExtractor version.
+- If it&amp;rsquo;s a new thing (for example a video file that a previous CCExtractor version processed OK and now causes a crash) mention the last version you know was correct.</description>
+    </item>
+    
+    <item>
+      <title>About CCExtractor Development</title>
+      <link>drs-11.github.io/public/general/about_the_org/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>drs-11.github.io/public/general/about_the_org/</guid>
+      <description>CCExtractor Development is an informal (meaning we&amp;rsquo;re not incorporated anywhere) organization that exists to coordinate the development efforts of the volunteers that contribute to the software and to manage our participation in specific events such as Google Summer of Code and Code-In.
+The following video is a contribution from Manveer Singh Basra, a Code-In 2016 student:
+  </description>
+    </item>
+    
+    <item>
+      <title>Google Summer of Code (GSoC) 2021 ideas page</title>
+      <link>drs-11.github.io/public/gsoc/ideas_page_for_summer_of_code_2021/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>drs-11.github.io/public/gsoc/ideas_page_for_summer_of_code_2021/</guid>
+      <description>Google Summer of Code 2021 #  Welcome to our ideas page. It&amp;rsquo;s great you want to start early. Please join us in our slack channel! (we&amp;rsquo;ll leave as an exercise to you to find it — it&amp;rsquo;s on our website).
+**This is an &amp;ldquo;new way of doing things year&amp;rdquo;**. GSoC projects are now supposed to take around 175 hours and we&amp;rsquo;ve adapted our ideas to reflect that. If you think any idea is too long or too short please let us know - we still need to fine tune this!</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s CCExtractor?</title>
+      <link>drs-11.github.io/public/general/whatsccextractor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>drs-11.github.io/public/general/whatsccextractor/</guid>
+      <description>What&amp;rsquo;s CCExtractor?
+A tool that analyzes video files and produces independent subtitle files from the closed captions data. CCExtractor is portable, small, and very fast. It works in Linux, Windows, and OSX.
+What kind of closed captions does CCExtractor support?
+Almost all of them:
+- American TV captions (CEA-608 is well supported, and CEA-708 is starting to look good)
+- European Teletext
+- European DVB
+- Brazilian ISBD
+- DVD</description>
+    </item>
+    
+  </channel>
+</rss>

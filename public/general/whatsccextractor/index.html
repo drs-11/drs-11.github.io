@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="generator" content="Hugo 0.79.1" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="What&rsquo;s CCExtractor?
+A tool that analyzes video files and produces independent subtitle files from the closed captions data. CCExtractor is portable, small, and very fast. It works in Linux, Windows, and OSX.
+What kind of closed captions does CCExtractor support?
+Almost all of them:
+- American TV captions (CEA-608 is well supported, and CEA-708 is starting to look good)
+- European Teletext
+- European DVB
+- Brazilian ISBD
+- DVD">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="What&#39;s CCExtractor?" />
+<meta property="og:description" content="What&rsquo;s CCExtractor?
+A tool that analyzes video files and produces independent subtitle files from the closed captions data. CCExtractor is portable, small, and very fast. It works in Linux, Windows, and OSX.
+What kind of closed captions does CCExtractor support?
+Almost all of them:
+- American TV captions (CEA-608 is well supported, and CEA-708 is starting to look good)
+- European Teletext
+- European DVB
+- Brazilian ISBD
+- DVD" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="drs-11.github.io/public/general/whatsccextractor/" />
+
+<title>What&#39;s CCExtractor? | Site Test Run</title>
+<link rel="manifest" href="/drs-11.github.io/manifest.json">
+<link rel="icon" href="/drs-11.github.io/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/drs-11.github.io/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css" integrity="sha256-bHxkRt/e58jJM&#43;m7xugO4&#43;1skTsqWVGfIJLDxqnWPlU=">
+<script defer src="/drs-11.github.io/en.search.min.fa8c6703bad97195535153853a1e282c70cd8cf986cc259ab7f0d2cf69a1c7b6.js" integrity="sha256-&#43;oxnA7rZcZVTUVOFOh4oLHDNjPmGzCWat/DSz2mhx7Y="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/drs-11.github.io"><span>Site Test Run</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/drs-11.github.io/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>What&#39;s CCExtractor?</strong>
+
+  <label for="toc-control">
+    
+    <img src="/drs-11.github.io/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><p><strong>What&rsquo;s CCExtractor?</strong></p>
+<p>A tool that analyzes video files and produces independent subtitle files
+from the closed captions data. CCExtractor is portable, small, and very
+fast. It works in Linux, Windows, and OSX.</p>
+<p><strong>What kind of closed captions does CCExtractor support?</strong></p>
+<p>Almost all of them:</p>
+<p>- American TV captions (CEA-608 is well supported, and CEA-708 is
+starting to look good)<br>
+- European Teletext<br>
+- European DVB<br>
+- Brazilian ISBD<br>
+- DVD<br>
+- MXF<br>
+Missing:<br>
+- DTMB (Chinese)</p>
+<p><strong>How easy is it to use CCExtractor?</strong></p>
+<p>Very. Just tell it what file to process and it does everything for you.</p>
+<p><strong>CCExtractor integration with other tools</strong></p>
+<p>It is possible to integrate CCExtractor in a larger process. A couple of
+tools already call CCExtractor as part their video process - this way
+they get subtitle support for free. Starting in 0.52, CCExtractor is
+very front-end friendly. Front-ends can easily get real-time status
+information. The GUI source code is provided and can be used for
+reference. Any tool, commercial or not, is specifically allowed to use
+CCExtractor for any use the authors seem fit. So if your favourite video
+tools still lacks captioning tool, feel free to send the authors here.</p>
+<p>You can also use CCExtractor as a library (as opposed to just running
+the binary), or take parts of the code. Keep in mind however that
+CCExtractor is GPLv2 so if you take parts or all of the source code your
+code must also be GPLv2.</p>
+<p><strong>What&rsquo;s the point of generating separate files for subtitles, if they
+are already in the source file?</strong><br>
+There are several reasons to have subtitles separated from the video
+file, including:</p>
+<p>- Closed captions never survive MPEG processing. If you take a MPEG
+file and encode it to any format (such as divx), your result file will
+not have closed captions. This means that if you want to keep the
+subtitles, you need to keep the original file. This is hardly practical
+if you are archiving HDTV shows for example.<br>
+- Subtitles files are small - so small (around 250 Kb for a movie) that
+you can quickly download them, or email them, etc, in case you have a
+recording without subtitles.<br>
+- Subtitles files are indexable: You can have a database with all your
+subtitles if you want (there are many available), so you can search the
+dialogs.<br>
+- Subtitles files are a de-facto standard: Almost every player can use
+them. In fact, many setbox players accept subtitles files in .srt format</p>
+<ul>
+<li>so you can have subtitles in your .mp4/.mkv/.avi./etc movies and not
+just in your original DVDs.<br>
+- Closed captions are stored in many different formats by capture
+cards. Upgrading to a new card, if it comes with a new player, may mean
+that you can&rsquo;t use your previously recorded closed captions, even if the
+audio/video are fine.<br>
+- Closed captions require a closed caption decoder. All US TV have one
+(it&rsquo;s a legal requirement), but no European TV does, since there are not
+closed captions in Europe (teletext and DVB subtitles are used instead).
+Basically this means that if you buy a DVD in the US which has closed
+captions but no DVD subtitles, you are out of luck. This is a problem
+with many (most) old TV shows DVDs, which only come with closed
+captions. DVD producers don&rsquo;t bother doing DVD subs, since it&rsquo;s another
+way to segment the market, same as with DVD regions.<br>
+<strong>How I do use subtitles once they are in a separate file?</strong><br>
+CCExtractor generates files in the two most common formats: .srt
+(SubRip) and .smi (which is a Microsoft standard). Most players support
+at least .srt natively. You just need to name the .srt file as the file
+you want to play it with, for example sample.avi and sample.srt.</li>
+</ul>
+<p>Other formats just as .txt (transcripts) are supported as well.</p>
+<p><strong>What kind of files can I extract closed captions from?</strong><br>
+CCExtractor currently handles:</p>
+<p>- Most HDTV captures (where you save the Transport Stream).<br>
+- Captures where captions are recorded in bttv format. The number of
+cards that use this card is huge. My test samples came from a Hauppage
+PVR-250. You can check the complete list
+<a href="https://linuxtv.org/hg/v4l-dvb/file/tip/linux/Documentation/video4linux/CARDLIST.bttv">here</a>.<br>
+- DVR-MS (microsoft digital video recording).<br>
+- Tivo files<br>
+- ReplayTV files<br>
+- Dish Network files<br>
+- DVDs<br>
+Usually, if you record a TV show with your capture card and CCExtractor
+produces the expected result, it will work for your all recordings. If
+it doesn&rsquo;t, which means that your card uses a format CCExtractor can&rsquo;t
+handle, please contact me and we&rsquo;ll try to make it work.</p>
+<p><strong>Can I edit the subtitles?</strong><br>
+.srt files are just text files, with time information (when subtitles
+are supposed to be shown and for how long) and some basic formatting
+(use italics, bold, etc). So you can edit them with any text editor. If
+you need to do serious editing (such as adjusting timing), you can use
+subtitle editing tools - there are many available.</p>
+<p><strong>Can CCExtractor generate other subtitles formats?</strong><br>
+At this time, CCExtractor can generate .srt, .smi and raw and bin files.</p>
+<p><strong>What&rsquo;s a raw file?</strong><br>
+A raw file is a file that contains an exact dump of the closed captions
+bytes, without any processing. This lets you use any tool of your choice
+to process the data. For example,
+<a href="http://www.theneitherworld.com/mcpoodle/SCC_TOOLS/DOCS/SCC_TOOLS.HTML">McPoodle&rsquo;s</a>
+excellent tools can generate subtitles files in several formats, adjust
+timing, etc.</p>
+<p><strong>What&rsquo;s a bin file? How is it different from a raw file?</strong><br>
+A bin file contains a dump of the closed captions bytes (same as a raw
+file) but it also includes timing information. This is a format that we
+made up for CCExtractor, i.e. it&rsquo;s not any kind of industry standard.
+However, it&rsquo;s the most useful (to us) for debugging purposes, so if you
+need to send us a sample please use this format. Also, a bin format can
+hold several CC streams (several languages, even from both analog and
+digital). A raw file cannot.</p>
+<p><strong>How long does it take to process a MPEG file?</strong><br>
+Obviously, it depends on the computer and the length of the file. In my
+(really old) computer it took around 90 seconds for a 45 minutes show in
+HDTV, with CPU usage around 3% (I/O operations are what&rsquo;s holding it
+back). Currently (2018) we&rsquo;re processing as many as 20 TV channels in
+real time using a single computer with a i5 CPU.</p>
+<p><strong>What platforms does CCExtractor work on?</strong><br>
+CCExtractor is developed and tested in Windows and Linux. It is also
+known to compile and run fine in OSX (a build script is included in the
+source .zip).</p>
+<p><strong>Where can I download it?</strong><br>
+The source code is hosted on github. Check out our download page for
+links to everything. Old versions were hosted on sourceforge. We&rsquo;re
+keeping those there for statistical purposes. This is the <a href="http://sourceforge.net/project/showfiles.php?group_id=190832">old download
+page</a> and
+this is the <a href="http://sourceforge.net/projects/ccextractor/">old project summary
+page</a>.</p>
+<p><strong>How I can contact the author?</strong><br>
+There&rsquo;s no longer one author. Carlos is still the official maintainer
+but there&rsquo;s a lot of people contributing to the project. Best thing is
+to check out our support page.</p>
+<p><strong>How do I use this tool (parameters, etc)?</strong><br>
+Run it without parameters and you will get a help screen. Basically, you
+just give it the input file name, like this:</p>
+<p>ccextractor the.sopranos.ts</p>
+<p>As for the lack of documentation: There is no lack of documentation!
+It&rsquo;s just included in the program itself. Just run it without parameters
+and you will get complete details.</p>
+<p><strong>How can I contribute to this project?</strong><br>
+There are several ways:<br>
+- If you are a developer, since the source code is available, you can
+fix things or add features yourself and submit a patch.<br>
+- If you are an user and find any bug, or have good suggestions, let me
+know.<br>
+- If you are doing your own recordings and have any particular one that
+CCExtractor can&rsquo;t process correctly, I&rsquo;d definitely like to take a look
+at it and try to fix it.<br>
+- If you really hate that there is not a lot of documentation, you can
+write it yourself. I&rsquo;ll answer any question you might have.<br>
+<strong>Does CCExtractor use code from other projects?</strong><br>
+Yes. Lots of code came originally from McPoodle&rsquo;s tools (even though it
+was ported from Perl to C). We&rsquo;ve also taken code from MythTV (which in
+turn took some from other places) and FFmpeg. The teletext code is 95%
+Petr Kutalek&rsquo;s and was integrated with permission.</p>
+<p>A good thing about Open Source is that you don&rsquo;t need to reinvent the
+wheel unless you want to (or unless you think you can come up with a
+&lsquo;rounder&rsquo; wheel).</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
